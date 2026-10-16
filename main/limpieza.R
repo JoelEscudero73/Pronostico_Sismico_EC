@@ -8,7 +8,7 @@ datos <- read_csv(here("data", "query.csv"))
 
 sismos_ts <- datos %>%
   mutate(fecha_hora = as_datetime(time)) %>%
-  mutate(mes = yearmounth(fecha_hora)) %>%
+  mutate(mes = yearmonth(fecha_hora)) %>%   #estaba puesto mounth y era month de ahi todo bien 
   group_by(mes) %>%
   summarise(
     total_sismos = n(),
