@@ -89,3 +89,21 @@ p3 <- ggplot(acf_df, aes(x = lag, y = acf)) +
   ) +
   theme_minimal()
 print(p3)
+
+
+
+
+#Comenbtario:MC
+# 1. Tendencia
+# Tendencia creciente: el número de sismos aumenta con el tiempo.
+#2. Estacionalidad
+# Se analiza si existe un patrón que se repite cada 12 meses.
+#  Estacionalidad fuerte: determinados meses presentan repetidamente
+#  cantidades altas o bajas de sismos.
+# 3. Ciclos
+#  Sin ciclos evidentes: predominan fluctuaciones irregulares
+#   o patrones estacionales, sin ciclos prolongados claramente definidos.
+# 4. Estacionariedad
+# Estacionariedad débil:
+#  La media y la varianza permanecen constantes y la autocovarianza
+#  depende únicamente del rezago
