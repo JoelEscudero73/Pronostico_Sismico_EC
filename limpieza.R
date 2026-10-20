@@ -20,3 +20,5 @@ sismos_ts <- datos %>%
 
 print(sismos_ts)
 
+#Exportar el excel limpio
+write_csv(sismos_ts, here("data", "Dato_limpios.csv"))
